@@ -29,7 +29,13 @@ uv build
 ```
 This command will create a `dist/` folder containing the built `.tar.gz` and `.whl` files.
 
-#### Step 3: Publish the Package
+#### Step 3: Install the package locally
+```bash
+uv pip install dist/calculator-0.1-py3-none-any.whl
+```
+Now you can test the calculator package by importing it in `test.py` file.
+
+#### Step 4: Publish the Package
 1. Use UV to publish your package directly to PyPI. Run:
 ```bash
 uv publish
